@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareerHub | Jobs</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">
+            Career<span>Hub</span>
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="jobs.html">Jobs</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="internships.html">Internships</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="applications.html">Applications</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profile</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Register</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<section class="page-header">
+
+    <div class="container">
+
+        <span>SMART JOB DISCOVERY</span>
+
+        <h1>Find Jobs That Fit You</h1>
+
+        <p>
+            Compare trust, hiring activity, skills and your match score
+            before applying.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="container search-section">
+
+    <div class="search-panel">
+
+        <div class="row g-3">
+
+            <div class="col-lg-5">
+
+                <label class="form-label">
+                    Search
+                </label>
+
+                <div class="input-group">
+
+                    <span class="input-group-text">
+                        <i class="bi bi-search"></i>
+                    </span>
+
+                    <input
+                        type="text"
+                        id="jobSearch"
+                        class="form-control"
+                        placeholder="Job title, company or skill">
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3">
+
+                <label class="form-label">
+                    Location
+                </label>
+
+                <select id="jobLocation" class="form-select">
+
+                    <option value="all">All Locations</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Remote">Remote</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="col-lg-2">
+
+                <label class="form-label">
+                    Minimum Match
+                </label>
+
+                <select id="matchFilter" class="form-select">
+
+                    <option value="0">Any</option>
+                    <option value="70">70%+</option>
+                    <option value="80">80%+</option>
+                    <option value="90">90%+</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="col-lg-2">
+
+                <label class="form-label">
+                    Trust
+                </label>
+
+                <select id="trustFilter" class="form-select">
+
+                    <option value="0">Any</option>
+                    <option value="80">80%+</option>
+                    <option value="90">90%+</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="container pb-5">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <div>
+            <h3 class="mb-1">Recommended Opportunities</h3>
+            <p class="text-muted mb-0">
+                Based on your current skills
+            </p>
+        </div>
+
+        <span class="results-count" id="jobCount">
+            12 Jobs
+        </span>
+
+    </div>
+
+
+    <div id="jobsContainer" class="row g-4">
+
+
+        <!-- JOB 1 -->
+
+        <div class="col-lg-6 job-wrapper"
+             data-title="Software Developer"
+             data-company="Tech Solutions"
+             data-location="Chennai"
+             data-match="82"
+             data-trust="94"
+             data-skills="HTML CSS JavaScript">
+
+            <div class="job-card">
+
+                <div class="job-top">
+
+                    <div class="company-logo">
+                        TS
+                    </div>
+
+                    <div class="job-main">
+
+                        <h4>Software Developer</h4>
+
+                        <p>
+                            <i class="bi bi-building"></i>
+                            Tech Solutions
+                        </p>
+
+                    </div>
+
+                    <span class="verified-badge">
+                        <i class="bi bi-patch-check-fill"></i>
+                    </span>
+
+                </div>
+
+
+                <div class="job-indicators">
+
+                    <span class="trust-indicator">
+                        <i class="bi bi-shield-check"></i>
+                        Trust 94%
+                    </span>
+
+                    <span class="match-indicator">
+                        <i class="bi bi-bullseye"></i>
+                        Match 82%
+                    </span>
+
+                    <span class="active-indicator">
+                        <i class="bi bi-activity"></i>
+                        Active Hiring
+                    </span>
+
+                </div>
+
+
+                <div class="job-meta">
+
+                    <span>
+                        <i class="bi bi-geo-alt"></i>
+                        Chennai
+                    </span>
+
+                    <span>
+                        <i class="bi bi-cash-stack"></i>
+                        ₹6 LPA
+                    </span>
+
+                    <span>
+                        <i class="bi bi-clock"></i>
+                        Full Time
+                    </span>
+
+                </div>
+
+
+                <div class="skills">
+
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+
+                </div>
+
+
+                <div class="job-actions">
+
+                    <button class="btn btn-outline-primary"
+                            onclick="showJobAnalysis('Software Developer','Tech Solutions','Chennai','₹6 LPA','HTML,CSS,JavaScript',82,94,'Active')">
+
+                        <i class="bi bi-bar-chart"></i>
+                        Match Analysis
+
+                    </button>
+
+                    <button class="primary-btn small-btn"
+                            onclick="applyForOpportunity('Software Developer','Tech Solutions','Chennai','₹6 LPA','HTML,CSS,JavaScript',82,94,'Active')">
+
+                        Apply Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- JOB 2 -->
+
+        <div class="col-lg-6 job-wrapper"
+             data-title="Python Developer"
+             data-company="CodeTech"
+             data-location="Bangalore"
+             data-match="87"
+             data-trust="94"
+             data-skills="Python Django SQL">
+
+            <div class="job-card">
+
+                <div class="job-top">
+
+                    <div class="company-logo">
+                        CT
+                    </div>
+
+                    <div class="job-main">
+
+                        <h4>Python Developer</h4>
+
+                        <p>
+                            <i class="bi bi-building"></i>
+                            CodeTech
+                        </p>
+
+                    </div>
+
+                    <span class="verified-badge">
+                        <i class="bi bi-patch-check-fill"></i>
+                    </span>
+
+                </div>
+
+
+                <div class="job-indicators">
+
+                    <span class="trust-indicator">
+                        <i class="bi bi-shield-check"></i>
+                        Trust 94%
+                    </span>
+
+                    <span class="match-indicator">
+                        <i class="bi bi-bullseye"></i>
+                        Match 87%
+                    </span>
+
+                    <span class="active-indicator">
+                        <i class="bi bi-activity"></i>
+                        Active Hiring
+                    </span>
+
+                </div>
+
+
+                <div class="job-meta">
+
+                    <span>
+                        <i class="bi bi-geo-alt"></i>
+                        Bangalore
+                    </span>
+
+                    <span>
+                        <i class="bi bi-cash-stack"></i>
+                        ₹7 LPA
+                    </span>
+
+                    <span>
+                        <i class="bi bi-clock"></i>
+                        Full Time
+                    </span>
+
+                </div>
+
+
+                <div class="skills">
+
+                    <span class="skill">Python</span>
+                    <span class="skill">Django</span>
+                    <span class="skill">SQL</span>
+
+                </div>
+
+
+                <div class="job-actions">
+
+                    <button class="btn btn-outline-primary"
+                            onclick="showJobAnalysis('Python Developer','CodeTech','Bangalore','₹7 LPA','Python,Django,SQL',87,94,'Active')">
+
+                        <i class="bi bi-bar-chart"></i>
+                        Match Analysis
+
+                    </button>
+
+                    <button class="primary-btn small-btn"
+                            onclick="applyForOpportunity('Python Developer','CodeTech','Bangalore','₹7 LPA','Python,Django,SQL',87,94,'Active')">
+
+                        Apply Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- JOB 3 -->
+
+        <div class="col-lg-6 job-wrapper"
+             data-title="Data Analyst"
+             data-company="DataWorks"
+             data-location="Remote"
+             data-match="78"
+             data-trust="91"
+             data-skills="Python Pandas SQL">
+
+            <div class="job-card">
+
+                <div class="job-top">
+
+                    <div class="company-logo">DW</div>
+
+                    <div class="job-main">
+
+                        <h4>Data Analyst</h4>
+
+                        <p>
+                            <i class="bi bi-building"></i>
+                            DataWorks
+                        </p>
+
+                    </div>
+
+                    <span class="verified-badge">
+                        <i class="bi bi-patch-check-fill"></i>
+                    </span>
+
+                </div>
+
+
+                <div class="job-indicators">
+
+                    <span class="trust-indicator">
+                        <i class="bi bi-shield-check"></i>
+                        Trust 91%
+                    </span>
+
+                    <span class="match-indicator">
+                        <i class="bi bi-bullseye"></i>
+                        Match 78%
+                    </span>
+
+                    <span class="active-indicator">
+                        <i class="bi bi-activity"></i>
+                        Active Hiring
+                    </span>
+
+                </div>
+
+
+                <div class="job-meta">
+
+                    <span>
+                        <i class="bi bi-geo-alt"></i>
+                        Remote
+                    </span>
+
+                    <span>
+                        <i class="bi bi-cash-stack"></i>
+                        ₹5.5 LPA
+                    </span>
+
+                    <span>
+                        <i class="bi bi-clock"></i>
+                        Full Time
+                    </span>
+
+                </div>
+
+
+                <div class="skills">
+                    <span class="skill">Python</span>
+                    <span class="skill">Pandas</span>
+                    <span class="skill">SQL</span>
+                </div>
+
+
+                <div class="job-actions">
+
+                    <button class="btn btn-outline-primary"
+                            onclick="showJobAnalysis('Data Analyst','DataWorks','Remote','₹5.5 LPA','Python,Pandas,SQL',78,91,'Active')">
+
+                        <i class="bi bi-bar-chart"></i>
+                        Match Analysis
+
+                    </button>
+
+                    <button class="primary-btn small-btn"
+                            onclick="applyForOpportunity('Data Analyst','DataWorks','Remote','₹5.5 LPA','Python,Pandas,SQL',78,91,'Active')">
+
+                        Apply Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- JOB 4 -->
+
+        <div class="col-lg-6 job-wrapper"
+             data-title="UI UX Designer"
+             data-company="Creative Labs"
+             data-location="Chennai"
+             data-match="72"
+             data-trust="88"
+             data-skills="Figma UI UX Design">
+
+            <div class="job-card">
+
+                <div class="job-top">
+
+                    <div class="company-logo">CL</div>
+
+                    <div class="job-main">
+
+                        <h4>UI/UX Designer</h4>
+
+                        <p>
+                            <i class="bi bi-building"></i>
+                            Creative Labs
+                        </p>
+
+                    </div>
+
+                    <span class="verified-badge">
+                        <i class="bi bi-patch-check-fill"></i>
+                    </span>
+
+                </div>
+
+
+                <div class="job-indicators">
+
+                    <span class="trust-indicator">
+                        <i class="bi bi-shield-check"></i>
+                        Trust 88%
+                    </span>
+
+                    <span class="match-indicator">
+                        <i class="bi bi-bullseye"></i>
+                        Match 72%
+                    </span>
+
+                    <span class="active-indicator">
+                        <i class="bi bi-activity"></i>
+                        Active Hiring
+                    </span>
+
+                </div>
+
+
+                <div class="job-meta">
+
+                    <span>
+                        <i class="bi bi-geo-alt"></i>
+                        Chennai
+                    </span>
+
+                    <span>
+                        <i class="bi bi-cash-stack"></i>
+                        ₹5 LPA
+                    </span>
+
+                    <span>
+                        <i class="bi bi-clock"></i>
+                        Full Time
+                    </span>
+
+                </div>
+
+
+                <div class="skills">
+                    <span class="skill">Figma</span>
+                    <span class="skill">UI/UX</span>
+                    <span class="skill">Design</span>
+                </div>
+
+
+                <div class="job-actions">
+
+                    <button class="btn btn-outline-primary"
+                            onclick="showJobAnalysis('UI/UX Designer','Creative Labs','Chennai','₹5 LPA','Figma,UI UX,Design',72,88,'Active')">
+
+                        <i class="bi bi-bar-chart"></i>
+                        Match Analysis
+
+                    </button>
+
+                    <button class="primary-btn small-btn"
+                            onclick="applyForOpportunity('UI/UX Designer','Creative Labs','Chennai','₹5 LPA','Figma,UI UX,Design',72,88,'Active')">
+
+                        Apply Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- JOB 5 -->
+
+        <div class="col-lg-6 job-wrapper"
+             data-title="Java Developer"
+             data-company="InfoTech"
+             data-location="Hyderabad"
+             data-match="68"
+             data-trust="92"
+             data-skills="Java Spring Boot MySQL">
+
+            <div class="job-card">
+
+                <div class="job-top">
+
+                    <div class="company-logo">IT</div>
+
+                    <div class="job-main">
+
+                        <h4>Java Developer</h4>
+
+                        <p>
+                            <i class="bi bi-building"></i>
+                            InfoTech
+                        </p>
+
+                    </div>
+
+                    <span class="verified-badge">
+                        <i class="bi bi-patch-check-fill"></i>
+                    </span>
+
+                </div>
+
+
+                <div class="job-indicators">
+
+                    <span class="trust-indicator">
+                        <i class="bi bi-shield-check"></i>
+                        Trust 92%
+                    </span>
+
+                    <span class="match-indicator">
+                        <i class="bi bi-bullseye"></i>
+                        Match 68%
+                    </span>
+
+                    <span class="active-indicator">
+                        <i class="bi bi-activity"></i>
+                        Active Hiring
+                    </span>
+
+                </div>
+
+
+                <div class="job-meta">
+
+                    <span>
+                        <i class="bi bi-geo-alt"></i>
+                        Hyderabad
+                    </span>
+
+                    <span>
+                        <i class="bi bi-cash-stack"></i>
+                        ₹8 LPA
+                    </span>
+
+                    <span>
+                        <i class="bi bi-clock"></i>
+                        Full Time
+                    </span>
+
+                </div>
+
+
+                <div class="skills">
+                    <span class="skill">Java</span>
+                    <span class="skill">Spring Boot</span>
+                    <span class="skill">MySQL</span>
+                </div>
+
+
+                <div class="job-actions">
+
+                    <button class="btn btn-outline-primary"
+                            onclick="showJobAnalysis('Java Developer','InfoTech','Hyderabad','₹8 LPA','Java,Spring Boot,MySQL',68,92,'Active')">
+
+                        <i class="bi bi-bar-chart"></i>
+                        Match Analysis
+
+                    </button>
+
+                    <button class="primary-btn small-btn"
+                            onclick="applyForOpportunity('Java Developer','InfoTech','Hyderabad','₹8 LPA','Java,Spring Boot,MySQL',68,92,'Active')">
+
+                        Apply Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- JOB 6 -->
+
+        <div class="col-lg-6 job-wrapper"
+             data-title="Frontend Developer"
+             data-company="WebWorks"
+             data-location="Bangalore"
+             data-match="90"
+             data-trust="96"
+             data-skills="HTML CSS React">
+
+            <div class="job-card">
+
+                <div class="job-top">
+
+                    <div class="company-logo">WW</div>
+
+                    <div class="job-main">
+
+                        <h4>Frontend Developer</h4>
+
+                        <p>
+                            <i class="bi bi-building"></i>
+                            WebWorks
+                        </p>
+
+                    </div>
+
+                    <span class="verified-badge">
+                        <i class="bi bi-patch-check-fill"></i>
+                    </span>
+
+                </div>
+
+
+                <div class="job-indicators">
+
+                    <span class="trust-indicator">
+                        <i class="bi bi-shield-check"></i>
+                        Trust 96%
+                    </span>
+
+                    <span class="match-indicator">
+                        <i class="bi bi-bullseye"></i>
+                        Match 90%
+                    </span>
+
+                    <span class="active-indicator">
+                        <i class="bi bi-activity"></i>
+                        Active Hiring
+                    </span>
+
+                </div>
+
+
+                <div class="job-meta">
+
+                    <span>
+                        <i class="bi bi-geo-alt"></i>
+                        Bangalore
+                    </span>
+
+                    <span>
+                        <i class="bi bi-cash-stack"></i>
+                        ₹6.5 LPA
+                    </span>
+
+                    <span>
+                        <i class="bi bi-clock"></i>
+                        Full Time
+                    </span>
+
+                </div>
+
+
+                <div class="skills">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">React</span>
+                </div>
+
+
+                <div class="job-actions">
+
+                    <button class="btn btn-outline-primary"
+                            onclick="showJobAnalysis('Frontend Developer','WebWorks','Bangalore','₹6.5 LPA','HTML,CSS,React',90,96,'Active')">
+
+                        <i class="bi bi-bar-chart"></i>
+                        Match Analysis
+
+                    </button>
+
+                    <button class="primary-btn small-btn"
+                            onclick="applyForOpportunity('Frontend Developer','WebWorks','Bangalore','₹6.5 LPA','HTML,CSS,React',90,96,'Active')">
+
+                        Apply Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- JOB 7 -->
+
+        <div class="col-lg-6 job-wrapper"
+             data-title="Machine Learning Engineer"
+             data-company="AI Systems"
+             data-location="Chennai"
+             data-match="85"
+             data-trust="95"
+             data-skills="Python ML TensorFlow">
+
+            <div class="job-card">
+
+                <div class="job-top">
+
+                    <div class="company-logo">AI</div>
+
+                    <div class="job-main">
+
+                        <h4>Machine Learning Engineer</h4>
+
+                        <p>
+                            <i class="bi bi-building"></i>
+                            AI Systems
+                        </p>
+
+                    </div>
+
+                    <span class="verified-badge">
+                        <i class="bi bi-patch-check-fill"></i>
+                    </span>
+
+                </div>
+
+
+                <div class="job-indicators">
+
+                    <span class="trust-indicator">
+                        <i class="bi bi-shield-check"></i>
+                        Trust 95%
+                    </span>
+
+                    <span class="match-indicator">
+                        <i class="bi bi-bullseye"></i>
+                        Match 85%
+                    </span>
+
+                    <span class="active-indicator">
+                        <i class="bi bi-activity"></i>
+                        Active Hiring
+                    </span>
+
+                </div>
+
+
+                <div class="job-meta">
+
+                    <span>
+                        <i class="bi bi-geo-alt"></i>
+                        Chennai
+                    </span>
+
+                    <span>
+                        <i class="bi bi-cash-stack"></i>
+                        ₹9 LPA
+                    </span>
+
+                    <span>
+                        <i class="bi bi-clock"></i>
+                        Full Time
+                    </span>
+
+                </div>
+
+
+                <div class="skills">
+                    <span class="skill">Python</span>
+                    <span class="skill">ML</span>
+                    <span class="skill">TensorFlow</span>
+                </div>
+
+
+                <div class="job-actions">
+
+                    <button class="btn btn-outline-primary"
+                            onclick="showJobAnalysis('Machine Learning Engineer','AI Systems','Chennai','₹9 LPA','Python,ML,TensorFlow',85,95,'Active')">
+
+                        <i class="bi bi-bar-chart"></i>
+                        Match Analysis
+
+                    </button>
+
+                    <button class="primary-btn small-btn"
+                            onclick="applyForOpportunity('Machine Learning Engineer','AI Systems','Chennai','₹9 LPA','Python,ML,TensorFlow',85,95,'Active')">
+
+                        Apply Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- JOB 8 -->
+
+        <div class="col-lg-6 job-wrapper"
+             data-title="Backend Developer"
+             data-company="CloudSoft"
+             data-location="Remote"
+             data-match="76"
+             data-trust="90"
+             data-skills="Node MongoDB API">
+
+            <div class="job-card">
+
+                <div class="job-top">
+
+                    <div class="company-logo">CS</div>
+
+                    <div class="job-main">
+
+                        <h4>Backend Developer</h4>
+
+                        <p>
+                            <i class="bi bi-building"></i>
+                            CloudSoft
+                        </p>
+
+                    </div>
+
+                    <span class="verified-badge">
+                        <i class="bi bi-patch-check-fill"></i>
+                    </span>
+
+                </div>
+
+
+                <div class="job-indicators">
+
+                    <span class="trust-indicator">
+                        <i class="bi bi-shield-check"></i>
+                        Trust 90%
+                    </span>
+
+                    <span class="match-indicator">
+                        <i class="bi bi-bullseye"></i>
+                        Match 76%
+                    </span>
+
+                    <span class="active-indicator">
+                        <i class="bi bi-activity"></i>
+                        Active Hiring
+                    </span>
+
+                </div>
+
+
+                <div class="job-meta">
+
+                    <span>
+                        <i class="bi bi-geo-alt"></i>
+                        Remote
+                    </span>
+
+                    <span>
+                        <i class="bi bi-cash-stack"></i>
+                        ₹7.5 LPA
+                    </span>
+
+                    <span>
+                        <i class="bi bi-clock"></i>
+                        Full Time
+                    </span>
+
+                </div>
+
+
+                <div class="skills">
+                    <span class="skill">Node.js</span>
+                    <span class="skill">MongoDB</span>
+                    <span class="skill">API</span>
+                </div>
+
+
+                <div class="job-actions">
+
+                    <button class="btn btn-outline-primary"
+                            onclick="showJobAnalysis('Backend Developer','CloudSoft','Remote','₹7.5 LPA','Node,MongoDB,API',76,90,'Active')">
+
+                        <i class="bi bi-bar-chart"></i>
+                        Match Analysis
+
+                    </button>
+
+                    <button class="primary-btn small-btn"
+                            onclick="applyForOpportunity('Backend Developer','CloudSoft','Remote','₹7.5 LPA','Node,MongoDB,API',76,90,'Active')">
+
+                        Apply Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- JOB 9 -->
+
+        <div class="col-lg-6 job-wrapper"
+             data-title="Software Tester"
+             data-company="QualityPro"
+             data-location="Chennai"
+             data-match="65"
+             data-trust="89"
+             data-skills="Testing Selenium QA">
+
+            <div class="job-card">
+
+                <div class="job-top">
+
+                    <div class="company-logo">QP</div>
+
+                    <div class="job-main">
+
+                        <h4>Software Tester</h4>
+
+                        <p>
+                            <i class="bi bi-building"></i>
+                            QualityPro
+                        </p>
+
+                    </div>
+
+                    <span class="verified-badge">
+                        <i class="bi bi-patch-check-fill"></i>
+                    </span>
+
+                </div>
+
+
+                <div class="job-indicators">
+
+                    <span class="trust-indicator">
+                        <i class="bi bi-shield-check"></i>
+                        Trust 89%
+                    </span>
+
+                    <span class="match-indicator">
+                        <i class="bi bi-bullseye"></i>
+                        Match 65%
+                    </span>
+
+                    <span class="active-indicator">
+                        <i class="bi bi-activity"></i>
+                        Active Hiring
+                    </span>
+
+                </div>
+
+
+                <div class="job-meta">
+
+                    <span>
+                        <i class="bi bi-geo-alt"></i>
+                        Chennai
+                    </span>
+
+                    <span>
+                        <i class="bi bi-cash-stack"></i>
+                        ₹4.8 LPA
+                    </span>
+
+                    <span>
+                        <i class="bi bi-clock"></i>
+                        Full Time
+                    </span>
+
+                </div>
+
+
+                <div class="skills">
+                    <span class="skill">Testing</span>
+                    <span class="skill">Selenium</span>
+                    <span class="skill">QA</span>
+                </div>
+
+
+                <div class="job-actions">
+
+                    <button class="btn btn-outline-primary"
+                            onclick="showJobAnalysis('Software Tester','QualityPro','Chennai','₹4.8 LPA','Testing,Selenium,QA',65,89,'Active')">
+
+                        <i class="bi bi-bar-chart"></i>
+                        Match Analysis
+
+                    </button>
+
+                    <button class="primary-btn small-btn"
+                            onclick="applyForOpportunity('Software Tester','QualityPro','Chennai','₹4.8 LPA','Testing,Selenium,QA',65,89,'Active')">
+
+                        Apply Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- JOB 10 -->
+
+        <div class="col-lg-6 job-wrapper"
+             data-title="Business Analyst"
+             data-company="Business Solutions"
+             data-location="Bangalore"
+             data-match="80"
+             data-trust="93"
+             data-skills="Excel SQL Power BI">
+
+            <div class="job-card">
+
+                <div class="job-top">
+
+                    <div class="company-logo">BS</div>
+
+                    <div class="job-main">
+
+                        <h4>Business Analyst</h4>
+
+                        <p>
+                            <i class="bi bi-building"></i>
+                            Business Solutions
+                        </p>
+
+                    </div>
+
+                    <span class="verified-badge">
+                        <i class="bi bi-patch-check-fill"></i>
+                    </span>
+
+                </div>
+
+
+                <div class="job-indicators">
+
+                    <span class="trust-indicator">
+                        <i class="bi bi-shield-check"></i>
+                        Trust 93%
+                    </span>
+
+                    <span class="match-indicator">
+                        <i class="bi bi-bullseye"></i>
+                        Match 80%
+                    </span>
+
+                    <span class="active-indicator">
+                        <i class="bi bi-activity"></i>
+                        Active Hiring
+                    </span>
+
+                </div>
+
+
+                <div class="job-meta">
+
+                    <span>
+                        <i class="bi bi-geo-alt"></i>
+                        Bangalore
+                    </span>
+
+                    <span>
+                        <i class="bi bi-cash-stack"></i>
+                        ₹6.2 LPA
+                    </span>
+
+                    <span>
+                        <i class="bi bi-clock"></i>
+                        Full Time
+                    </span>
+
+                </div>
+
+
+                <div class="skills">
+                    <span class="skill">Excel</span>
+                    <span class="skill">SQL</span>
+                    <span class="skill">Power BI</span>
+                </div>
+
+
+                <div class="job-actions">
+
+                    <button class="btn btn-outline-primary"
+                            onclick="showJobAnalysis('Business Analyst','Business Solutions','Bangalore','₹6.2 LPA','Excel,SQL,Power BI',80,93,'Active')">
+
+                        <i class="bi bi-bar-chart"></i>
+                        Match Analysis
+
+                    </button>
+
+                    <button class="primary-btn small-btn"
+                            onclick="applyForOpportunity('Business Analyst','Business Solutions','Bangalore','₹6.2 LPA','Excel,SQL,Power BI',80,93,'Active')">
+
+                        Apply Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- JOB 11 -->
+
+        <div class="col-lg-6 job-wrapper"
+             data-title="DevOps Engineer"
+             data-company="DevCloud"
+             data-location="Hyderabad"
+             data-match="70"
+             data-trust="94"
+             data-skills="AWS Docker Kubernetes">
+
+            <div class="job-card">
+
+                <div class="job-top">
+
+                    <div class="company-logo">DC</div>
+
+                    <div class="job-main">
+
+                        <h4>DevOps Engineer</h4>
+
+                        <p>
+                            <i class="bi bi-building"></i>
+                            DevCloud
+                        </p>
+
+                    </div>
+
+                    <span class="verified-badge">
+                        <i class="bi bi-patch-check-fill"></i>
+                    </span>
+
+                </div>
+
+
+                <div class="job-indicators">
+
+                    <span class="trust-indicator">
+                        <i class="bi bi-shield-check"></i>
+                        Trust 94%
+                    </span>
+
+                    <span class="match-indicator">
+                        <i class="bi bi-bullseye"></i>
+                        Match 70%
+                    </span>
+
+                    <span class="active-indicator">
+                        <i class="bi bi-activity"></i>
+                        Active Hiring
+                    </span>
+
+                </div>
+
+
+                <div class="job-meta">
+
+                    <span>
+                        <i class="bi bi-geo-alt"></i>
+                        Hyderabad
+                    </span>
+
+                    <span>
+                        <i class="bi bi-cash-stack"></i>
+                        ₹8.5 LPA
+                    </span>
+
+                    <span>
+                        <i class="bi bi-clock"></i>
+                        Full Time
+                    </span>
+
+                </div>
+
+
+                <div class="skills">
+                    <span class="skill">AWS</span>
+                    <span class="skill">Docker</span>
+                    <span class="skill">Kubernetes</span>
+                </div>
+
+
+                <div class="job-actions">
+
+                    <button class="btn btn-outline-primary"
+                            onclick="showJobAnalysis('DevOps Engineer','DevCloud','Hyderabad','₹8.5 LPA','AWS,Docker,Kubernetes',70,94,'Active')">
+
+                        <i class="bi bi-bar-chart"></i>
+                        Match Analysis
+
+                    </button>
+
+                    <button class="primary-btn small-btn"
+                            onclick="applyForOpportunity('DevOps Engineer','DevCloud','Hyderabad','₹8.5 LPA','AWS,Docker,Kubernetes',70,94,'Active')">
+
+                        Apply Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- JOB 12 -->
+
+        <div class="col-lg-6 job-wrapper"
+             data-title="Cyber Security Analyst"
+             data-company="SecureTech"
+             data-location="Remote"
+             data-match="74"
+             data-trust="92"
+             data-skills="Security Networking Ethical Hacking">
+
+            <div class="job-card">
+
+                <div class="job-top">
+
+                    <div class="company-logo">ST</div>
+
+                    <div class="job-main">
+
+                        <h4>Cyber Security Analyst</h4>
+
+                        <p>
+                            <i class="bi bi-building"></i>
+                            SecureTech
+                        </p>
+
+                    </div>
+
+                    <span class="verified-badge">
+                        <i class="bi bi-patch-check-fill"></i>
+                    </span>
+
+                </div>
+
+
+                <div class="job-indicators">
+
+                    <span class="trust-indicator">
+                        <i class="bi bi-shield-check"></i>
+                        Trust 92%
+                    </span>
+
+                    <span class="match-indicator">
+                        <i class="bi bi-bullseye"></i>
+                        Match 74%
+                    </span>
+
+                    <span class="active-indicator">
+                        <i class="bi bi-activity"></i>
+                        Active Hiring
+                    </span>
+
+                </div>
+
+
+                <div class="job-meta">
+
+                    <span>
+                        <i class="bi bi-geo-alt"></i>
+                        Remote
+                    </span>
+
+                    <span>
+                        <i class="bi bi-cash-stack"></i>
+                        ₹7 LPA
+                    </span>
+
+                    <span>
+                        <i class="bi bi-clock"></i>
+                        Full Time
+                    </span>
+
+                </div>
+
+
+                <div class="skills">
+                    <span class="skill">Security</span>
+                    <span class="skill">Networking</span>
+                    <span class="skill">Ethical Hacking</span>
+                </div>
+
+
+                <div class="job-actions">
+
+                    <button class="btn btn-outline-primary"
+                            onclick="showJobAnalysis('Cyber Security Analyst','SecureTech','Remote','₹7 LPA','Security,Networking,Ethical Hacking',74,92,'Active')">
+
+                        <i class="bi bi-bar-chart"></i>
+                        Match Analysis
+
+                    </button>
+
+                    <button class="primary-btn small-btn"
+                            onclick="applyForOpportunity('Cyber Security Analyst','SecureTech','Remote','₹7 LPA','Security,Networking,Ethical Hacking',74,92,'Active')">
+
+                        Apply Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="noJobs" class="no-results d-none">
+
+        <i class="bi bi-search"></i>
+
+        <h4>No matching jobs found</h4>
+
+        <p>
+            Try changing your search or filters.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- MATCH MODAL -->
+
+<div class="modal fade" id="jobAnalysisModal" tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content analysis-modal">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    <i class="bi bi-stars"></i>
+                    Job Match Analysis
+                </h5>
+
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+
+            <div class="modal-body">
+
+                <div id="analysisContent"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    <div class="container">
+
+        <h4>Career<span>Hub</span></h4>
+
+        <p>
+            Trusted opportunities. Smarter matching.
+            Better career decisions.
+        </p>
+
+        <hr>
+
+        <p class="text-center mb-0">
+            © 2026 CareerHub. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

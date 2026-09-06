@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareerHub | Applications</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">
+            Career<span>Hub</span>
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="jobs.html">Jobs</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="internships.html">Internships</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="applications.html">Applications</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profile</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Register</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<section class="page-header">
+
+    <div class="container">
+
+        <span>APPLICATION TRACKER</span>
+
+        <h1>My Applications</h1>
+
+        <p>
+            Track every application from Applied to Interview and Selection.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="container section-padding">
+
+
+    <div class="row g-4 mb-5">
+
+        <div class="col-6 col-lg-3">
+
+            <div class="dashboard-stat">
+
+                <i class="bi bi-send"></i>
+
+                <div>
+                    <small>Total Applications</small>
+                    <h3 id="totalApplications">0</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-6 col-lg-3">
+
+            <div class="dashboard-stat">
+
+                <i class="bi bi-hourglass-split"></i>
+
+                <div>
+                    <small>Under Review</small>
+                    <h3 id="reviewApplications">0</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-6 col-lg-3">
+
+            <div class="dashboard-stat">
+
+                <i class="bi bi-camera-video"></i>
+
+                <div>
+                    <small>Interviews</small>
+                    <h3 id="interviewApplications">0</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-6 col-lg-3">
+
+            <div class="dashboard-stat">
+
+                <i class="bi bi-trophy"></i>
+
+                <div>
+                    <small>Selected</small>
+                    <h3 id="selectedApplications">0</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="section-title">
+
+        <span>YOUR JOURNEY</span>
+
+        <h2>Application History</h2>
+
+    </div>
+
+
+    <div id="applicationList"></div>
+
+
+    <div id="emptyMessage" class="empty-state d-none">
+
+        <div class="empty-icon">
+            <i class="bi bi-folder2-open"></i>
+        </div>
+
+        <h3>No Applications Yet</h3>
+
+        <p>
+            Your applications will appear here after you apply for a job.
+        </p>
+
+        <a href="jobs.html" class="primary-btn">
+            Explore Jobs
+        </a>
+
+    </div>
+
+
+</section>
+
+
+<footer>
+
+    <div class="container">
+
+        <h4>Career<span>Hub</span></h4>
+
+        <p>
+            Track your career journey in one place.
+        </p>
+
+        <hr>
+
+        <p class="text-center mb-0">
+            © 2026 CareerHub. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

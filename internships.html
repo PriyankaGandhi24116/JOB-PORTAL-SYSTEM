@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareerHub | Internships</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">
+            Career<span>Hub</span>
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="jobs.html">Jobs</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="internships.html">Internships</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="applications.html">Applications</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profile</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Register</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<section class="page-header">
+
+    <div class="container">
+
+        <span>LEARN • BUILD • GROW</span>
+
+        <h1>Find Your Internship</h1>
+
+        <p>
+            Discover internships based on your skills and career goals.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="container search-section">
+
+    <div class="search-panel">
+
+        <div class="row g-3">
+
+            <div class="col-md-8">
+
+                <label class="form-label">
+                    Search Internships
+                </label>
+
+                <div class="input-group">
+
+                    <span class="input-group-text">
+                        <i class="bi bi-search"></i>
+                    </span>
+
+                    <input
+                        type="text"
+                        id="internshipSearch"
+                        class="form-control"
+                        placeholder="Search internship, company or skill">
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <label class="form-label">
+                    Type
+                </label>
+
+                <select id="internshipType" class="form-select">
+
+                    <option value="all">All Internships</option>
+                    <option value="paid">Paid</option>
+                    <option value="remote">Remote</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="container pb-5">
+
+    <div class="row g-4" id="internshipContainer">
+
+
+        <div class="col-lg-4 internship-wrapper"
+             data-title="Frontend Developer Intern"
+             data-company="Startup Labs"
+             data-type="paid"
+             data-search="frontend developer html css javascript startup labs chennai">
+
+            <div class="internship-card">
+
+                <div class="internship-header">
+
+                    <div class="company-logo">
+                        SL
+                    </div>
+
+                    <span class="internship-badge">
+                        Internship
+                    </span>
+
+                </div>
+
+                <h4>Frontend Developer Intern</h4>
+
+                <p class="company-name">
+                    <i class="bi bi-building"></i>
+                    Startup Labs
+                </p>
+
+                <div class="job-indicators">
+
+                    <span class="trust-indicator">
+                        <i class="bi bi-shield-check"></i>
+                        Trust 90%
+                    </span>
+
+                    <span class="match-indicator">
+                        <i class="bi bi-bullseye"></i>
+                        Match 88%
+                    </span>
+
+                </div>
+
+                <div class="job-meta">
+
+                    <span>
+                        <i class="bi bi-geo-alt"></i>
+                        Chennai
+                    </span>
+
+                    <span>
+                        <i class="bi bi-clock"></i>
+                        3 Months
+                    </span>
+
+                </div>
+
+                <div class="salary">
+                    ₹15,000 / month
+                </div>
+
+                <div class="skills">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                </div>
+
+                <button
+                    class="primary-btn full-btn"
+                    onclick="applyForOpportunity('Frontend Developer Intern','Startup Labs','Chennai','₹15,000/month','HTML,CSS,JavaScript',88,90,'Active')">
+
+                    Apply Now
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-lg-4 internship-wrapper"
+             data-title="Python Developer Intern"
+             data-company="CodeTech"
+             data-type="paid"
+             data-search="python developer django sql codetech bangalore">
+
+            <div class="internship-card">
+
+                <div class="internship-header">
+
+                    <div class="company-logo">
+                        CT
+                    </div>
+
+                    <span class="internship-badge">
+                        Internship
+                    </span>
+
+                </div>
+
+                <h4>Python Developer Intern</h4>
+
+                <p class="company-name">
+                    <i class="bi bi-building"></i>
+                    CodeTech
+                </p>
+
+                <div class="job-indicators">
+
+                    <span class="trust-indicator">
+                        <i class="bi bi-shield-check"></i>
+                        Trust 94%
+                    </span>
+
+                    <span class="match-indicator">
+                        <i class="bi bi-bullseye"></i>
+                        Match 91%
+                    </span>
+
+                </div>
+
+                <div class="job-meta">
+
+                    <span>
+                        <i class="bi bi-geo-alt"></i>
+                        Bangalore
+                    </span>
+
+                    <span>
+                        <i class="bi bi-clock"></i>
+                        6 Months
+                    </span>
+
+                </div>
+
+                <div class="salary">
+                    ₹20,000 / month
+                </div>
+
+                <div class="skills">
+                    <span class="skill">Python</span>
+                    <span class="skill">Django</span>
+                    <span class="skill">SQL</span>
+                </div>
+
+                <button
+                    class="primary-btn full-btn"
+                    onclick="applyForOpportunity('Python Developer Intern','CodeTech','Bangalore','₹20,000/month','Python,Django,SQL',91,94,'Active')">
+
+                    Apply Now
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-lg-4 internship-wrapper"
+             data-title="Data Science Intern"
+             data-company="DataWorks"
+             data-type="remote"
+             data-search="data science python pandas machine learning dataworks remote">
+
+            <div class="internship-card">
+
+                <div class="internship-header">
+
+                    <div class="company-logo">
+                        DW
+                    </div>
+
+                    <span class="internship-badge">
+                        Remote
+                    </span>
+
+                </div>
+
+                <h4>Data Science Intern</h4>
+
+                <p class="company-name">
+                    <i class="bi bi-building"></i>
+                    DataWorks
+                </p>
+
+                <div class="job-indicators">
+
+                    <span class="trust-indicator">
+                        <i class="bi bi-shield-check"></i>
+                        Trust 91%
+                    </span>
+
+                    <span class="match-indicator">
+                        <i class="bi bi-bullseye"></i>
+                        Match 84%
+                    </span>
+
+                </div>
+
+                <div class="job-meta">
+
+                    <span>
+                        <i class="bi bi-geo-alt"></i>
+                        Remote
+                    </span>
+
+                    <span>
+                        <i class="bi bi-clock"></i>
+                        2 Months
+                    </span>
+
+                </div>
+
+                <div class="salary">
+                    ₹18,000 / month
+                </div>
+
+                <div class="skills">
+                    <span class="skill">Python</span>
+                    <span class="skill">Pandas</span>
+                    <span class="skill">ML</span>
+                </div>
+
+                <button
+                    class="primary-btn full-btn"
+                    onclick="applyForOpportunity('Data Science Intern','DataWorks','Remote','₹18,000/month','Python,Pandas,Machine Learning',84,91,'Active')">
+
+                    Apply Now
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="noInternships" class="no-results d-none">
+
+        <i class="bi bi-search"></i>
+
+        <h4>No internships found</h4>
+
+        <p>
+            Try another search.
+        </p>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="container">
+
+        <h4>Career<span>Hub</span></h4>
+
+        <p>
+            Learn today. Build tomorrow.
+        </p>
+
+        <hr>
+
+        <p class="text-center mb-0">
+            © 2026 CareerHub. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
