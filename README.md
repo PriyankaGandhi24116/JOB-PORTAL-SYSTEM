@@ -53,7 +53,7 @@ The project focuses on providing a clean, responsive, and user-friendly interfac
 
 ### 🎓 Internships Page
 
-![Internships Page](./INTERNSHIPS%20PAGE.png)
+![Internships Page](./internships.png)
 
 ### 📋 Applications Page
 
